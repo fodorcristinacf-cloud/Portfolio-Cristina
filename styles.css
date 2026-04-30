@@ -1451,68 +1451,58 @@ p {
 
 .trajectory-icon {
   position: relative;
+  overflow: hidden;
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  width: 3.1rem;
-  height: 3.1rem;
-  border: 1px solid rgba(225, 37, 117, 0.16);
+  width: 3.7rem;
+  height: 3.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 50%;
-  background: rgba(225, 37, 117, 0.07);
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.95) 0 16%, rgba(255, 255, 255, 0) 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(255, 232, 240, 0.72) 54%, rgba(225, 37, 117, 0.16));
+  box-shadow:
+    0 1rem 1.65rem rgba(95, 34, 62, 0.16),
+    inset 0 0.35rem 0.75rem rgba(255, 255, 255, 0.82),
+    inset 0 -0.55rem 1rem rgba(130, 35, 78, 0.1);
 }
 
-.trajectory-icon::before,
-.trajectory-icon::after {
+.trajectory-icon::before {
   content: "";
   position: absolute;
-  border-color: var(--primary-dark);
-}
-
-.trajectory-icon-briefcase::before {
-  width: 1.45rem;
-  height: 1rem;
-  border: 1.5px solid var(--primary-dark);
-  border-radius: 0.2rem;
-}
-
-.trajectory-icon-briefcase::after {
-  width: 0.62rem;
-  height: 0.35rem;
-  top: 1rem;
-  border: 1.5px solid var(--primary-dark);
-  border-bottom: 0;
-  border-radius: 0.25rem 0.25rem 0 0;
-}
-
-.trajectory-icon-academic::before {
-  width: 1.45rem;
-  height: 1.45rem;
-  border: 1.5px solid var(--primary-dark);
-  transform: rotate(45deg) skew(-12deg, -12deg);
-}
-
-.trajectory-icon-academic::after {
-  width: 1.05rem;
-  height: 0.55rem;
-  bottom: 0.86rem;
-  border: 1.5px solid var(--primary-dark);
-  border-top: 0;
-  border-radius: 0 0 0.45rem 0.45rem;
-}
-
-.trajectory-icon-laptop::before {
-  width: 1.45rem;
-  height: 1rem;
-  border: 1.5px solid var(--primary-dark);
-  border-radius: 0.18rem;
-}
-
-.trajectory-icon-laptop::after {
-  width: 1.85rem;
-  height: 0.18rem;
-  bottom: 0.8rem;
+  inset: 0.4rem 0.55rem auto 0.55rem;
+  height: 1.1rem;
   border-radius: 999px;
-  background: var(--primary-dark);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.trajectory-icon img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0.35rem 0.38rem rgba(66, 25, 42, 0.22));
+}
+
+.trajectory-icon-academic img {
+  width: 2.45rem;
+  height: 2.45rem;
+}
+
+.trajectory-icon-briefcase {
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.96) 0 16%, rgba(255, 255, 255, 0) 34%),
+    linear-gradient(145deg, #fff4f8, #f8a9c7 54%, #d74783);
+}
+
+.trajectory-icon-laptop {
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.96) 0 16%, rgba(255, 255, 255, 0) 34%),
+    linear-gradient(145deg, #fff1f7, #f7b6cf 54%, #c82973);
 }
 
 .experience-list {
