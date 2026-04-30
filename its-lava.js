@@ -17,7 +17,7 @@ function replyItsLava(input) {
   const text = input.trim().toLowerCase();
 
   if (!text) {
-    return "Hola, soy el asistente virtual oficial de ITS LAVA. ¿En qué puedo ayudarte?";
+    return "¡Hola! Soy el asistente virtual oficial de ITS LAVA. ¿En qué puedo ayudarte hoy?";
   }
 
   const askHuman =
@@ -26,23 +26,27 @@ function replyItsLava(input) {
     );
 
   if (askHuman) {
-    return "Para esta consulta es mejor que contactes directamente con el equipo de ITS LAVA en hola@itslava.es — te ayudarán con más detalle. El horario de atención es de lunes a viernes, de 9:00 a 18:00 h.";
-  }
-
-  if (/pedido|comprar|hacer un pedido|como compro|cómo compro/.test(text)) {
-    return "Los pedidos se realizan a través de la web oficial de ITS LAVA: https://itslava.es/";
+    return "Para esta consulta es mejor que contactes directamente con el equipo de ITS LAVA en hola@itslava.es. Te ayudarán con más detalle. El horario de atención es de lunes a viernes, de 9:00 a 18:00 h.";
   }
 
   if (/coste de env[ií]o|coste envio|precio del env[ií]o|precio envio/.test(text)) {
     return "No dispongo de esa información. Te recomiendo consultarlo directamente en https://itslava.es/ o escribiendo a hola@itslava.es.";
   }
 
+  if (/estado|seguimiento|d[oó]nde est[aá] mi pedido|localizar.*pedido/.test(text)) {
+    return "No dispongo de esa información. Te recomiendo consultarlo directamente en https://itslava.es/ o escribiendo a hola@itslava.es.";
+  }
+
   if (/cu[aá]nto tarda|plazo|env[ií]o|envio|entrega/.test(text)) {
-    return "Plazos estimados desde la salida del almacén:\n1. Península: 24–48 h.\n2. Islas Baleares: 3–7 días.\n3. Canarias y resto de Europa: 3–7 días.";
+    return "Plazos estimados desde la salida del almacén:\n1. Península: 24-48 h.\n2. Islas Baleares: 3-7 días.\n3. Canarias y resto de Europa: 3-7 días.";
+  }
+
+  if (/hacer un pedido|como compro|cómo compro|comprar|pedido/.test(text)) {
+    return "Los pedidos se realizan a través de la web oficial de ITS LAVA: https://itslava.es/";
   }
 
   if (/devol|devolver|reembolso|retornar/.test(text)) {
-    return "Para devolver un artículo:\n1. Verifica que no hayan pasado más de 14 días naturales desde la entrega.\n2. Comprueba que el producto está en perfectas condiciones.\n3. Contacta con ITS LAVA en hola@itslava.es para gestionar la devolución.\n4. El coste es de ~6 € en península/Baleares o ~15 € en Canarias/Europa.\nPareos y pañuelos no admiten devolución por higiene.";
+    return "Para devolver un artículo:\n1. Verifica que han pasado menos de 14 días naturales desde la entrega.\n2. Comprueba que el artículo está en perfectas condiciones.\n3. Contacta con ITS LAVA en hola@itslava.es.\n4. Coste: ~6 € en península/Baleares o ~15 € en Canarias/Europa.\nPareos y pañuelos no admiten devolución por higiene.";
   }
 
   if (/cambio|cambiar|otro art[ií]culo|otra talla/.test(text)) {
@@ -50,11 +54,11 @@ function replyItsLava(input) {
   }
 
   if (/tienda|tienda f[ií]sica|madrid|barcelona|d[oó]nde comprar/.test(text)) {
-    return "Puedes encontrar ITS LAVA en:\n1. WOW CONCEPT — Calle Gran Vía 18, 28013 Madrid.\n2. WOW CONCEPT — Calle Serrano 52, 28009 Madrid.\n3. Ferent Bags — Calle Casanova 191, Barcelona.";
+    return "Puedes encontrar ITS LAVA en:\n1. WOW CONCEPT, Calle Gran Vía 18, 28013 Madrid.\n2. WOW CONCEPT, Calle Serrano 52, 28009 Madrid.\n3. Ferent Bags, Calle Casanova 191, Barcelona.";
   }
 
   if (/contacto|email|correo|horario|atenci[oó]n/.test(text)) {
-    return "Puedes contactar con ITS LAVA en hola@itslava.es. El horario de atención al cliente es de lunes a viernes, de 9:00 a 18:00 h. La respuesta por email suele llegar en 1–2 días laborales.";
+    return "Puedes contactar con ITS LAVA en hola@itslava.es. El horario de atención al cliente es de lunes a viernes, de 9:00 a 18:00 h. La respuesta por email suele llegar en 1-2 días laborales.";
   }
 
   if (/prensa|colaboraciones|marketing/.test(text)) {
@@ -62,7 +66,7 @@ function replyItsLava(input) {
   }
 
   if (/cuidados|cuidado del producto|asesoramiento/.test(text)) {
-    return "ITS LAVA ofrece asesoramiento sobre productos y cuidados. Si necesitas información concreta, te recomiendo escribir a hola@itslava.es.";
+    return "ITS LAVA ofrece asesoramiento sobre productos y cuidados. Puedes escribir a hola@itslava.es para una consulta concreta.";
   }
 
   if (/its lava|itslava/.test(text)) {
@@ -74,7 +78,7 @@ function replyItsLava(input) {
 
 if (itsLavaMessages && itsLavaForm) {
   appendItsLavaMessage(
-    "Hola, soy el asistente virtual oficial de ITS LAVA. ¿En qué puedo ayudarte?",
+    "¡Hola! Soy el asistente virtual oficial de ITS LAVA. ¿En qué puedo ayudarte hoy?",
     "bot",
   );
 

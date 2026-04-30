@@ -6,582 +6,359 @@
     <title>Cristina Boroc Fodor | IA aplicada y automatización</title>
     <meta
       name="description"
-      content="Portfolio personal de Cristina Boroc Fodor sobre IA aplicada, automatización, asistentes virtuales, contenido con IA y digitalización para negocios."
+      content="Portfolio personal de Cristina Boroc Fodor: IA aplicada, automatización con Make, asistentes virtuales, chatbots, marketing digital, SEO, Python y soluciones digitales para pequeños negocios."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow page-glow-a"></div>
-    <div class="page-glow page-glow-b"></div>
-
     <header class="site-header">
-      <nav class="navbar container">
+      <nav class="navbar container" aria-label="Navegación principal">
         <a class="brand" href="#top" aria-label="Ir al inicio">
           <span class="brand-mark">CBF</span>
-          <span class="brand-copy">
-            <span class="brand-text">Cristina Boroc Fodor Caraculo</span>
-            <span class="brand-subtitle">IA aplicada · automatización · negocio digital</span>
-          </span>
         </a>
 
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-menu"
-          data-nav-toggle
-        >
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú" data-nav-toggle>
           <span></span>
           <span></span>
         </button>
 
         <div class="nav-menu" id="site-menu" data-nav-menu>
-          <a href="#perfil">Perfil</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#habilidades">Habilidades</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#herramientas">Herramientas</a>
           <a href="#trayectoria">Trayectoria</a>
-          <a class="btn btn-primary nav-cta" href="#contacto">Contactar</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+          <a class="btn btn-primary nav-cv" href="./assets/CV-Cristina-Boroc-Fodor.pdf" target="_blank" rel="noopener noreferrer" download>Descargar CV</a>
         </div>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section">
+      <section class="hero section-panel">
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow">IA aplicada · automatización · negocio digital</p>
-            <h1>
-              Soluciones digitales claras para negocios que quieren <span class="accent-word">avanzar</span>.
-            </h1>
-            <p class="lead">
-              Creo asistentes, automatizaciones y recursos digitales fáciles de usar,
-              con foco en claridad, ahorro de tiempo y experiencia de usuario.
-            </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-              <a class="btn btn-secondary" href="#contacto">Contactar</a>
+            <h1>Cristina <span>Boroc Fodor</span></h1>
+            <h2>IA aplicada y automatización <span>para negocios reales</span></h2>
+            <div class="hero-text">
+              <p>Ayudo a pequeños negocios, profesionales y proyectos digitales a ahorrar tiempo, ordenar procesos y comunicarse mejor usando inteligencia artificial, automatización y herramientas digitales fáciles de entender.</p>
             </div>
-
-            <div class="chip-row">
-              <span class="chip">Asistentes virtuales</span>
-              <span class="chip">Automatización con Make</span>
-              <span class="chip">Contenido con IA</span>
-              <span class="chip">Digitalización para pymes</span>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#proyectos">Ver proyectos &rarr;</a>
+              <a class="btn btn-outline" href="./assets/CV-Cristina-Boroc-Fodor.pdf" target="_blank" rel="noopener noreferrer" download>Descargar CV</a>
+            </div>
+            <div class="tag-cloud" aria-label="Especialidades">
+              <span>IA aplicada</span>
+              <span>Automatización</span>
+              <span>Chatbots</span>
+              <span>Marketing digital</span>
+              <span>SEO</span>
+              <span>Contenido con IA</span>
+              <span>Python</span>
             </div>
           </div>
 
           <div class="hero-visual reveal">
-            <div class="hero-composition">
-              <article class="hero-card hero-card-portrait">
-                <div class="hero-portrait-frame">
-                  <img
-                    src="assets\cristina-portrait.png"
-                    alt="assets\cristina-portrait.png"
-                  />
-                </div>
-              </article>
+            <div class="orb-line"></div>
+            <div class="portrait-shell">
+              <img src="assets/cristina-portrait.png" alt="Cristina Boroc Fodor" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section-panel about-section" id="sobre-mi">
+        <div class="container about-grid">
+          <div class="section-title reveal">
+            <p class="eyebrow with-line">Sobre mí</p>
+            <h2>Una forma cercana de aplicar la tecnología</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p>Soy Cristina Boroc Fodor y me estoy especializando en inteligencia artificial aplicada, automatización y soluciones digitales para negocios.</p>
+            <p>Me interesa la tecnología cuando sirve para algo concreto: responder mejor a un cliente, ahorrar tiempo en tareas repetitivas, ordenar información, crear contenido útil o hacer que un negocio tenga una presencia digital más clara.</p>
+            <p>Combino experiencia en atención al cliente, gestión, comunicación y herramientas digitales para crear soluciones cercanas, comprensibles y orientadas a resultados.</p>
+            <blockquote class="quote-card">Me gusta convertir procesos confusos en soluciones simples, visuales y fáciles de usar.</blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel skills-section" id="habilidades">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">ENFOQUE</p>
-            <h2>Tecnología útil, clara y accionable</h2>
-            <p>
-              IA, automatización y comunicación digital aplicadas a necesidades reales.
-            </p>
+            <p class="eyebrow with-line">Habilidades</p>
+            <h2 class="two-line">Capacidades digitales<br>orientadas a resultados.</h2>
+            <p class="two-line">Combino organización, análisis y criterio técnico para crear soluciones claras.<br>Diseño recursos funcionales y adaptados a cada proyecto.</p>
           </div>
-
-          <div class="approach-layout">
-            <article class="approach-panel approach-panel-main reveal">
-              <span class="approach-index">01</span>
-              <h3>Asistentes virtuales</h3>
-              <p>
-                Respuestas claras para orientar mejor al usuario.
-              </p>
-            </article>
-
-            <article class="approach-panel reveal">
-              <span class="approach-index">02</span>
-              <h3>Automatización de procesos</h3>
-              <p>
-                Flujos simples para reducir tareas repetitivas.
-              </p>
-            </article>
-
-            <article class="approach-panel reveal">
-              <span class="approach-index">03</span>
-              <h3>Contenido con IA</h3>
-              <p>
-                Ideas, estructura y piezas listas para adaptar.
-              </p>
-            </article>
-
-            <article class="approach-panel approach-panel-wide reveal">
-              <span class="approach-index">04</span>
-              <h3>Presencia digital</h3>
-              <p>
-                Webs y recursos visuales con una imagen más profesional.
-              </p>
-            </article>
+          <div class="skills-grid">
+            <article class="skill-card reveal"><span>01</span><div class="line-illustration">AI</div><h3>Asistentes virtuales</h3><p>Diseño asistentes capaces de responder dudas frecuentes, guiar al usuario y mejorar la atención al cliente.</p></article>
+            <article class="skill-card reveal"><span>02</span><div class="line-illustration">Mk</div><h3>Automatización de procesos</h3><p>Creo flujos con Make para reducir tareas repetitivas, conectar aplicaciones y ordenar procesos de trabajo.</p></article>
+            <article class="skill-card reveal"><span>03</span><div class="line-illustration">CAI</div><h3>Contenido con IA</h3><p>Genero ideas, textos, publicaciones, calendarios y estructuras de contenido adaptadas a cada negocio.</p></article>
+            <article class="skill-card reveal"><span>04</span><div class="line-illustration">SEO</div><h3>SEO y visibilidad digital</h3><p>Trabajo palabras clave, estructura de contenido y mejoras para que una web se entienda mejor y sea más visible.</p></article>
+            <article class="skill-card reveal"><span>05</span><div class="line-illustration">Bot</div><h3>Chatbots y atención al cliente</h3><p>Creo experiencias conversacionales para responder preguntas, orientar al usuario y reducir tareas repetitivas.</p></article>
+            <article class="skill-card reveal"><span>06</span><div class="line-illustration">Py</div><h3>Python y datos</h3><p>Aplico lógica de programación, análisis inicial de datos y automatización para construir recursos digitales útiles.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="perfil">
-        <div class="container profile-grid">
-          <div class="profile-copy reveal">
-            <p class="eyebrow">PERFIL</p>
-            <h2>IA aplicada con visión práctica.</h2>
-            <p>
-              Soy Cristina Boroc Fodor. Ayudo a ordenar procesos, mejorar la presencia
-              digital y crear soluciones con IA fáciles de entender.
-            </p>
-            <p>
-              Combino atención al cliente, gestión y herramientas digitales para crear
-              experiencias útiles, cercanas y orientadas a negocio.
-            </p>
-
-            <div class="chip-row profile-chips">
-              <span class="chip">IA aplicada</span>
-              <span class="chip">Automatización</span>
-              <span class="chip">Marketing digital</span>
-              <span class="chip">Digitalización de negocios</span>
-            </div>
-          </div>
-
-          <div class="profile-side reveal">
-            <article class="signature-panel">
-              <p class="eyebrow soft">Cristina</p>
-              <h3>Soluciones entendibles y orientadas a negocio.</h3>
-              <p>
-                IA útil y comunicación clara para avanzar sin complicarse.
-              </p>
-            </article>
-
-            <div class="profile-notes">
-              <article>
-                <span class="note-kicker">IA aplicada</span>
-                <strong>Uso práctico</strong>
-                <p>Asistentes, prompts, contenido y apoyo conversacional.</p>
-              </article>
-              <article>
-                <span class="note-kicker">Organización</span>
-                <strong>Procesos más fluidos</strong>
-                <p>Automatización, orden digital y mejora de tareas repetitivas.</p>
-              </article>
-              <article>
-                <span class="note-kicker">Presencia</span>
-                <strong>Imagen profesional</strong>
-                <p>Webs claras, recursos visuales y comunicación digital cuidada.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section projects-section" id="proyectos">
+      <section class="section-panel projects-section" id="proyectos">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">PROYECTOS</p>
-            <h2>Proyectos digitales con uso real.</h2>
-            <p>
-              Asistentes, automatización, contenido con IA y experiencias pensadas para
-              resolver necesidades concretas.
-            </p>
+            <p class="eyebrow with-line">Proyectos</p>
+            <h2 class="two-line">Proyectos con<br>enfoque práctico.</h2>
+            <p class="two-line">Una selección de asistentes, chatbots y recursos digitales pensados para resolver necesidades reales.<br>Soluciones enfocadas en comunicación, contenido y atención al cliente.</p>
           </div>
-
-          <div class="projects-flow">
+          <div class="projects-showcase">
             <article class="project-card reveal">
-              <div class="project-copy">
-                <span class="project-number">01</span>
-                <h3>Mi GPT</h3>
-                <p>
-                  GPT para crear ideas de contenido basadas en tendencias y adaptadas a
-                  cada negocio.
-                </p>
-                <div class="project-tags">
-                  <span>GPT personalizado</span>
-                  <span>Contenido IA</span>
-                  <span>Redes sociales</span>
-                </div>
-                <a
-                  class="btn btn-primary"
-                  href="https://chatgpt.com/g/g-69d8d08b23148191912b400432f92dc6-contentai"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Abrir GPT
-                </a>
-              </div>
-
-              <div class="project-visual project-chat">
-                <div class="screen-card">
-                  <div class="screen-top">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="screen-body">
-                    <div class="bubble assistant">Tendencias para una tienda de bolsos</div>
-                    <div class="bubble user">
-                      5 ideas listas para redes, con enfoque cercano y visual.
-                    </div>
-                    <div class="trend-list">
-                      <span>Reel educativo</span>
-                      <span>Post comparativo</span>
-                      <span>CTA editable</span>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-media gpt-media"><img src="assets/contentai-logo.png" alt="Logo del GPT ContentAI" /></div>
+              <div class="project-body">
+                <p class="project-kicker">Contenido con IA</p>
+                <h3>Mi GPT — Generador de ideas de contenido para negocios</h3>
+                <p>GPT personalizado diseñado para ayudar a pequeños negocios a crear ideas de contenido adaptadas a su sector, tono y objetivos.</p>
+                <p class="result"><strong>Resultado:</strong> ideas listas para adaptar y publicar en redes sociales.</p>
+                <div class="chip-row"><span>ChatGPT</span><span>Prompt engineering</span><span>Marketing digital</span><span>Contenido con IA</span></div>
+                <a class="text-link" href="https://chatgpt.com/g/g-69d8d08b23148191912b400432f92dc6-contentai" target="_blank" rel="noopener noreferrer">Abrir GPT</a>
               </div>
             </article>
-
-            <article class="project-card project-card-reverse reveal">
-              <div class="project-copy">
-                <span class="project-number">02</span>
-                <h3>Avatar digital</h3>
-                <p>
-                  Recurso visual para demos, presentaciones y contenidos con más presencia.
-                </p>
-                <div class="project-tags">
-                  <span>Avatar IA</span>
-                  <span>Demo visual</span>
-                  <span>Presentación digital</span>
-                </div>
-                <a class="btn btn-secondary" href="assets/avatar-video.mp4" target="_blank" rel="noreferrer">Ver demo</a>
-              </div>
-
-              <div class="project-visual project-video">
-                <div class="video-frame">
-                  <video
-                    src="assets/avatar-video.mp4"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="metadata"
-                    controls
-                  ></video>
-                </div>
-              </div>
-            </article>
-
             <article class="project-card reveal">
-              <div class="project-copy">
-                <span class="project-number">03</span>
-                <h3>Chatbot Celador IA</h3>
-                <p>
-                  Chatbot educativo para resolver dudas de celador con una experiencia
-                  clara y guiada.
-                </p>
-                <div class="project-tags">
-                  <span>Chatbase</span>
-                  <span>Chatbot educativo</span>
-                  <span>Celador IA</span>
-                </div>
-                <a class="btn btn-primary" href="celador-ia.html">Probar chatbot</a>
-              </div>
-
-              <div class="project-visual project-notebook">
-                <div class="project-image-card">
-                  <img src="assets\7e793451-1a05-4879-9e36-759b9852ac2e.png" alt="Imagen del proyecto Celador IA" />
-                </div>
+              <div class="project-media avatar-media"><video src="assets/Dise%C3%B1o%20sin%20t%C3%ADtulo.mp4" autoplay muted loop playsinline preload="metadata" controls></video></div>
+              <div class="project-body">
+                <p class="project-kicker">IA generativa</p>
+                <h3>Avatar digital — Presentación visual con IA</h3>
+                <p>Recurso visual creado con inteligencia artificial para reforzar presentaciones, demos y comunicación digital.</p>
+                <p class="result"><strong>Resultado:</strong> demo visual útil para marca personal, formación o presentación de servicios.</p>
+                <div class="chip-row"><span>IA generativa</span><span>Avatar digital</span><span>Comunicación visual</span></div>
+                <a class="text-link" href="assets/Dise%C3%B1o%20sin%20t%C3%ADtulo.mp4" target="_blank" rel="noopener noreferrer">Ver demo</a>
               </div>
             </article>
-
-            <article class="project-card project-card-reverse reveal">
-              <div class="project-copy">
-                <span class="project-number">04</span>
-                <h3>Asistente virtual ITS LAVA</h3>
-                <p>
-                  Demo de atención al cliente para pedidos, envíos, devoluciones,
-                  tiendas físicas y contacto.
-                </p>
-                <div class="project-tags">
-                  <span>ITS LAVA</span>
-                  <span>Moda online</span>
-                  <span>Atención al cliente</span>
-                </div>
-                <a class="btn btn-secondary" href="its-lava.html">Ver demo</a>
+            <article class="project-card reveal">
+              <div class="project-media contain-media"><img src="assets/7e793451-1a05-4879-9e36-759b9852ac2e.png" alt="Captura del Chatbot Celador IA" /></div>
+              <div class="project-body">
+                <p class="project-kicker">Chatbot educativo</p>
+                <h3>Chatbot Celador IA — Asistente educativo</h3>
+                <p>Chatbot educativo pensado para resolver dudas frecuentes relacionadas con el puesto de celador, temario, funciones y situaciones prácticas.</p>
+                <p class="result"><strong>Resultado:</strong> orientación rápida y accesible para estudiantes o personas interesadas en el área sanitaria.</p>
+                <div class="chip-row"><span>Chatbase</span><span>IA conversacional</span><span>Diseño conversacional</span></div>
+                <a class="text-link" href="celador-ia.html">Probar chatbot</a>
               </div>
-
-              <div class="project-visual project-assistant">
-                <div class="assistant-mock">
-                  <div class="assistant-head">
-                    <div class="assistant-avatar">IL</div>
-                    <div>
-                      <strong>ITS LAVA</strong>
-                      <p>Pedidos, envíos y devoluciones</p>
-                    </div>
-                  </div>
-                  <div class="assistant-thread">
-                    <div class="bubble assistant">¿Qué necesitas resolver hoy sobre ITS LAVA?</div>
-                    <div class="bubble user">Quiero saber cuánto tarda un pedido y cómo devolverlo.</div>
-                    <div class="bubble assistant">
-                      Te doy la información base y el contacto si hace falta.
-                    </div>
-                  </div>
-                </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-media its-media contain-media"><strong>ITS LAVA</strong><span>Atención al cliente para ecommerce</span></div>
+              <div class="project-body">
+                <p class="project-kicker">Ecommerce</p>
+                <h3>Asistente virtual ITS LAVA — Atención al cliente</h3>
+                <p>Demo de asistente virtual para una tienda online de moda. Responde dudas sobre pedidos, envíos, devoluciones, tiendas físicas y formas de contacto.</p>
+                <p class="result"><strong>Resultado:</strong> experiencia de compra más fluida y soporte inicial automatizado.</p>
+                <div class="chip-row"><span>Chatbot</span><span>IA conversacional</span><span>Ecommerce</span></div>
+                <a class="text-link" href="its-lava.html">Ver demo</a>
+              </div>
+            </article>
+            <article class="project-card project-wide reveal">
+              <div class="project-media serina-media contain-media"><img src="assets/serinawear-logo.png" alt="Logo de SerinaWear" /></div>
+              <div class="project-body">
+                <p class="project-kicker">Ecommerce propio</p>
+                <h3>SerinaWear — tienda online de bolsos</h3>
+                <p>Creación y gestión de página web de ecommerce, redes sociales, planificación de contenido, campañas de publicidad digital, SEO, uso de IA para contenido y análisis de resultados.</p>
+                <p class="result"><strong>Estado:</strong> proyecto en fase de mejora y redefinición estratégica.</p>
+                <div class="chip-row"><span>Ecommerce</span><span>SEO</span><span>Redes sociales</span><span>IA aplicada</span></div>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="herramientas">
+      <section class="section-panel tools-section" id="herramientas">
         <div class="container">
-          <div class="section-head tools-head reveal">
-            <p class="eyebrow">HERRAMIENTAS</p>
-            <h2>Stack visual para tecnología, automatización y negocio</h2>
+          <div class="tools-head reveal">
+            <p class="eyebrow with-line">Herramientas</p>
+            <h2 class="two-line">Herramientas que uso<br>para crear soluciones digitales</h2>
+            <p class="two-line">Conocimientos y plataformas que utilizo en mi día a día, organizados por áreas<br>para aplicar la tecnología de forma práctica y estratégica.</p>
           </div>
-
-          <div class="tools-carousel reveal" aria-label="Carrusel de herramientas">
-            <button class="tools-carousel-btn tools-carousel-prev" type="button" aria-label="Ver herramientas anteriores" data-tools-prev>
-              ‹
-            </button>
-            <div class="tools-grid tools-grid-visual" data-tools-track>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-openai" aria-hidden="true">
-                  <svg viewBox="0 0 32 32"><path d="M16 5.2c2.3 0 4.2 1.1 5.4 2.8 2 .1 3.9 1.2 4.9 3 1.1 1.9.9 4.1-.1 5.8.8 1.7.7 3.8-.3 5.5-1.2 2-3.2 3-5.4 3.1-1.2 1.7-3.1 2.7-5.4 2.7-2.2 0-4.1-1-5.3-2.6-2.1-.2-4-1.3-5-3.1-1.1-1.9-.9-4.1.1-5.8-.8-1.8-.7-3.8.4-5.6 1.1-1.9 3.1-2.9 5.2-3 1.2-1.7 3.1-2.8 5.5-2.8Zm-3.2 6.1 6.9 4v-2.9l-4-2.3a3.9 3.9 0 0 0-2.9 1.2Zm-2.5 2.1a4 4 0 0 0-.4 3.1l6.9-4-2.5-1.4-4 2.3Zm.5 7.2 2.5 1.5v-8l-2.5 1.4v5.1Zm5.5 4.3a4 4 0 0 0 2.9-1.2l-6.9-4v2.9l4 2.3Zm5.4-6.6-6.9 4 2.5 1.4 4-2.3a4 4 0 0 0 .4-3.1Zm-.8-1.7v-2.9l-2.5-1.4v8l2.5-1.5v-2.2Z" /></svg>
-                </span>
-                <strong>ChatGPT</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-gemini" aria-hidden="true">
-                  <svg viewBox="0 0 32 32"><path d="M16 3.5c1.4 6.2 3.9 9.2 10.1 10.5-6.2 1.4-8.7 4.3-10.1 10.5-1.4-6.2-3.9-9.1-10.1-10.5C12.1 12.7 14.6 9.7 16 3.5Z" /></svg>
-                </span>
-                <strong>Gemini</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-copilot" aria-hidden="true">
-                  <svg viewBox="0 0 32 32"><path d="M10.5 12.2c0-3 2.4-5.4 5.5-5.4s5.5 2.4 5.5 5.4v.5h1.2c1.8 0 3.3 1.5 3.3 3.3v4.1c0 2.8-2.3 5.1-5.1 5.1h-9.8A5.1 5.1 0 0 1 6 20.1V16c0-1.8 1.5-3.3 3.3-3.3h1.2v-.5Zm2.6.5h5.8v-.5a2.9 2.9 0 0 0-5.8 0v.5Zm-2 5.3c0 1.4 1.1 2.5 2.5 2.5s2.4-1.1 2.4-2.5h-4.9Zm4.9 4.1h3.4c1.4 0 2.6-1.1 2.6-2.5V18h-3.6a5.2 5.2 0 0 1-2.4 4.1Z" /></svg>
-                </span>
-                <strong>Copilot</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-claude">AI</span>
-                <strong>Claude</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-make" aria-hidden="true">
-                  <svg viewBox="0 0 32 32"><path d="M7.7 22.4 12.6 9h4.1l-4.9 13.4H7.7Zm6.7 0L19.3 9h4.1l-4.9 13.4h-4.1Zm6.7 0L26 9h4.1l-4.9 13.4h-4.1Z" /></svg>
-                </span>
-                <strong>Make</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-metricool">MC</span>
-                <strong>Metricool</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-notion" aria-hidden="true">
-                  <svg viewBox="0 0 32 32"><path d="M8 7.3 21.9 6l2.1 1.7v16.4l-2 1.8H8.8L6 24V9.4l2-2.1Zm1.4 3.3v12.2h11.9V9L9.4 10.6Zm2.5 2h3.2l3.9 6.1v-4.9l-1.2-.2v-1h3.8v1l-1.1.2V21H19l-4.6-7v5.6l1.3.2v1h-3.9v-1l1.1-.2v-5.8l-1-.2v-1Z" /></svg>
-                </span>
-                <strong>Notion</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-google">GW</span>
-                <strong>Google Workspace</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-microsoft">MO</span>
-                <strong>Microsoft Office</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-web">WB</span>
-                <strong>Creación y gestión web</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-digital">MD</span>
-                <strong>Marketing digital</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-seo">SEO</span>
-                <strong>SEO básico</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-prompt">PE</span>
-                <strong>Prompt engineering</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-auto">AU</span>
-                <strong>Automatización</strong>
-              </article>
-              <article class="tool-tile reveal">
-                <span class="tool-logo tone-digital">DG</span>
-                <strong>Digitalización</strong>
-              </article>
+          <div class="section-divider" aria-hidden="true"></div>
+          <div class="tools-layout">
+            <aside class="tools-intro reveal">
+              <h3>Áreas</h3>
+              <div class="tool-categories">
+                <button class="is-active" type="button" data-tool-area="IA aplicada" data-tool-target="tool-chatgpt"><i>✣</i> IA aplicada</button>
+                <button type="button" data-tool-area="Automatización" data-tool-target="tool-make"><i>⚙</i> Automatización</button>
+                <button type="button" data-tool-area="Marketing digital" data-tool-target="tool-metricool"><i>☞</i> Marketing digital</button>
+                <button type="button" data-tool-area="Productividad" data-tool-target="tool-notion"><i>☑</i> Productividad</button>
+                <button type="button" data-tool-area="Programación y datos" data-tool-target="tool-python"><i>&lt;/&gt;</i> Programación y datos</button>
+              </div>
+            </aside>
+            <div class="tools-grid reveal">
+              <article id="tool-chatgpt" data-category="IA aplicada"><i class="tool-logo logo-chatgpt" aria-hidden="true"></i><h3>ChatGPT</h3><p>Asistente conversacional para investigación, creación de contenido y estructura de ideas.</p><span>IA aplicada</span></article>
+              <article id="tool-gemini" data-category="IA aplicada"><i class="tool-logo logo-gemini" aria-hidden="true"></i><h3>Gemini</h3><p>Investigación, apoyo creativo, análisis inicial y generación de ideas.</p><span>IA aplicada</span></article>
+              <article id="tool-copilot" data-category="IA aplicada"><i class="tool-logo logo-copilot" aria-hidden="true"></i><h3>Copilot AI</h3><p>Apoyo con productividad, documentos, organización y comunicación profesional.</p><span>IA aplicada</span></article>
+              <article id="tool-ai" data-category="IA aplicada"><i class="tool-logo logo-ai" aria-hidden="true"></i><h3>AI</h3><p>Uso de inteligencia artificial generativa para idear, ordenar, redactar y resolver tareas digitales.</p><span>IA aplicada</span></article>
+              <article id="tool-claude" data-category="IA aplicada"><i class="tool-logo logo-claude" aria-hidden="true"></i><h3>Claude</h3><p>Redacción, análisis profundo y creación de estructuras claras.</p><span>IA aplicada</span></article>
+              <article id="tool-prompt" data-category="IA aplicada"><i class="tool-logo logo-prompt" aria-hidden="true"></i><h3>Prompt engineering</h3><p>Diseño de instrucciones claras para obtener mejores respuestas y resultados con IA.</p><span>IA aplicada</span></article>
+              <article id="tool-make" data-category="Automatización"><i class="tool-logo logo-make" aria-hidden="true"></i><h3>Make</h3><p>Automatización de procesos e integración de herramientas sin código.</p><span>Automatización</span></article>
+              <article id="tool-automatizacion" data-category="Automatización"><i class="tool-logo logo-automation" aria-hidden="true"></i><h3>Automatización</h3><p>Flujos para reducir tareas repetitivas, conectar aplicaciones y ordenar procesos.</p><span>Automatización</span></article>
+              <article id="tool-metricool" data-category="Marketing digital"><i class="tool-logo logo-metricool" aria-hidden="true"></i><h3>Metricool</h3><p>Gestión y análisis de redes sociales, contenidos y métricas.</p><span>Marketing digital</span></article>
+              <article id="tool-marketing" data-category="Marketing digital"><i class="tool-logo logo-marketing" aria-hidden="true"></i><h3>Marketing digital</h3><p>Planificación de acciones digitales, contenidos, campañas y comunicación online.</p><span>Marketing digital</span></article>
+              <article id="tool-seo" data-category="Marketing digital"><i class="tool-logo logo-seo" aria-hidden="true"></i><h3>SEO básico</h3><p>Estructura de contenidos, palabras clave y mejora de visibilidad online.</p><span>Marketing digital</span></article>
+              <article id="tool-web" data-category="Marketing digital"><i class="tool-logo logo-web" aria-hidden="true"></i><h3>Creación y gestión web</h3><p>Organización de páginas, recursos visuales, ecommerce y presencia digital profesional.</p><span>Marketing digital</span></article>
+              <article id="tool-digitalizacion" data-category="Marketing digital"><i class="tool-logo logo-digital" aria-hidden="true"></i><h3>Digitalización</h3><p>Aplicación de herramientas digitales para mejorar procesos y comunicación de pequeños negocios.</p><span>Marketing digital</span></article>
+              <article id="tool-notion" data-category="Productividad"><i class="tool-logo logo-notion" aria-hidden="true"></i><h3>Notion</h3><p>Organización de información, proyectos, bases de conocimiento y recursos.</p><span>Productividad</span></article>
+              <article id="tool-google" data-category="Productividad"><i class="tool-logo logo-google" aria-hidden="true"></i><h3>Google Workspace</h3><p>Gestión documental, colaboración, formularios y organización diaria.</p><span>Productividad</span></article>
+              <article id="tool-office" data-category="Productividad"><i class="tool-logo logo-office" aria-hidden="true"></i><h3>Microsoft Office</h3><p>Documentos, presentaciones, hojas de cálculo y recursos profesionales.</p><span>Productividad</span></article>
+              <article id="tool-python" data-category="Programación y datos"><i class="tool-logo logo-python" aria-hidden="true"></i><h3>Python</h3><p>Lógica de programación, automatización básica, análisis de datos y scripts.</p><span>Programación y datos</span></article>
             </div>
-            <button class="tools-carousel-btn tools-carousel-next" type="button" aria-label="Ver más herramientas" data-tools-next>
-              ›
-            </button>
           </div>
         </div>
       </section>
 
-      <section class="section" id="trayectoria">
+      <section class="section-panel credentials-section" id="certificaciones">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow">TRAYECTORIA</p>
-            <h2>Experiencia y formación aplicada.</h2>
+          <div class="credentials-head reveal">
+            <div class="title-stars" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+            <h2>Credenciales y certificaciones</h2>
+            <div class="title-stars title-stars-wide" aria-hidden="true"><span></span><i>✦</i><span></span></div>
+            <p>Insignias y certificados que respaldan mi formación en IA, automatización, productividad, SEO, contenido digital y programación.</p>
           </div>
-
-          <div class="credentials-grid">
-            <article class="credentials-panel credentials-panel-timeline reveal">
-              <p class="eyebrow soft">Trayectoria</p>
-              <div class="timeline-grid">
-                <article class="timeline-card">
-                  <span class="timeline-step">01</span>
-                  <h3>Proyecto ecommerce propio</h3>
-                  <p>
-                    Creación web, redes sociales, publicidad digital, SEO básico y análisis.
-                  </p>
-                </article>
-
-                <article class="timeline-card">
-                  <span class="timeline-step">02</span>
-                  <h3>Experiencia transferible</h3>
-                  <p>
-                    Atención al cliente, gestión, comunicación y resolución.
-                  </p>
-                </article>
-
-                <article class="timeline-card">
-                  <span class="timeline-step">03</span>
-                  <h3>Formación especializada</h3>
-                  <p>
-                    IA aplicada, automatización, marketing digital, BI y Python.
-                  </p>
-                </article>
-              </div>
-            </article>
-
-            <article class="credentials-panel reveal">
-              <p class="eyebrow soft">Formación</p>
-              <h3>IA, marketing y digitalización.</h3>
-              <div class="accordion-list">
-                <details class="accordion-item" open>
-                  <summary>Programa Superior Universitario en IA Aplicada a la Empresa</summary>
-                  <p>Universidad de Nebrija / CEOE Fedeto</p>
-                </details>
-                <details class="accordion-item">
-                  <summary>Community Manager, Analíticas e Informes</summary>
-                  <p>CEOE Fedeto</p>
-                </details>
-                <details class="accordion-item">
-                  <summary>Business Intelligence y estrategias</summary>
-                  <p>CEOE - CEPYME Guadalajara</p>
-                </details>
-                <details class="accordion-item">
-                  <summary>Python y habilidades digitales</summary>
-                  <p>Santander Open Academy / Cloud Incubator HUB</p>
-                </details>
-              </div>
-            </article>
-
-            <article class="credentials-panel reveal">
-              <p class="eyebrow soft">FAQ</p>
-              <h3>Preguntas frecuentes</h3>
-              <div class="accordion-list">
-                <details class="accordion-item">
-                  <summary>¿En qué puedo ayudar a una pyme?</summary>
-                  <p>
-                    Automatizaciones, asistentes y mejoras digitales para trabajar con más orden.
-                  </p>
-                </details>
-                <details class="accordion-item">
-                  <summary>¿Qué soluciones desarrollo?</summary>
-                  <p>
-                    Chatbots, asistentes, automatizaciones y contenido con IA.
-                  </p>
-                </details>
-                <details class="accordion-item">
-                  <summary>¿Qué herramientas utilizo?</summary>
-                  <p>
-                    ChatGPT, Gemini, Copilot, Claude, Make, Metricool, Notion y Office.
-                  </p>
-                </details>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contacto">
-        <div class="container">
-          <div class="contact-shell reveal">
-            <div class="contact-copy">
-              <p class="eyebrow">CONTACTO</p>
-              <h2>Contacto para proyectos de IA aplicada, automatización y digitalización.</h2>
-              <p>
-                Si buscas apoyo en IA, automatización o presencia digital, puedes
-                escribirme aquí.
-              </p>
-            </div>
-
-            <div class="contact-card">
-              <p class="contact-label">Disponible para colaborar</p>
-              <p>
-                Para proyectos donde la tecnología sea clara, útil y orientada a negocio.
-              </p>
-              <a class="contact-mail" href="mailto:fodorcristinacf@gmail.com">
-                fodorcristinacf@gmail.com
+          <div class="credential-card-grid">
+            <article class="credential-card reveal">
+              <a class="credential-preview" href="PythonEssentials1Update20260427-33-b607hi.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado de Python Essentials">
+                <img src="image (1).png" alt="Insignia Python Essentials 1 de Cisco Networking Academy">
               </a>
-              <a
-                class="btn btn-primary linkedin-btn"
-                href="https://www.linkedin.com/in/cristina-boroc-fodor-b8a985159/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
+              <h3>Python Essentials</h3>
+              <p class="credential-issuer">Cisco Networking Academy</p>
+              <p>Programación, lógica y automatización aplicada.</p>
+              <a class="btn btn-outline" href="PythonEssentials1Update20260427-33-b607hi.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </article>
+            <article class="credential-card reveal">
+              <a class="credential-preview" href="MakeCertificateDefault20260428-32-5qcx8b.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado Make Foundation">
+                <img src="image.png" alt="Insignia Make Academy Foundation">
               </a>
-            </div>
+              <h3>Make Foundation</h3>
+              <p class="credential-issuer">Make Academy</p>
+              <p>Escenarios, conexión entre aplicaciones y optimización de procesos.</p>
+              <a class="btn btn-outline" href="MakeCertificateDefault20260428-32-5qcx8b.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </article>
+            <article class="credential-card reveal">
+              <a class="credential-preview" href="340_fodorcristinacf@gmail.com (1).pdf" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado Microsoft Copilot">
+                <img src="Microsoft-Copilot-Logo-444x250.webp" alt="Logo de Microsoft Copilot">
+              </a>
+              <h3>Microsoft Copilot</h3>
+              <p class="credential-issuer">Microsoft / LinkedIn Learning</p>
+              <p>Productividad, documentos y comunicación profesional potenciada con IA.</p>
+              <a class="btn btn-outline" href="340_fodorcristinacf@gmail.com (1).pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </article>
+            <article class="credential-card reveal">
+              <a class="credential-preview" href="1108_fodorcristinacf@gmail.com.pdf" target="_blank" rel="noopener noreferrer" aria-label="Ver certificado SEO y Content Marketing">
+                <span class="credential-logo credential-logo-seo" aria-hidden="true"><i>SEO</i></span>
+              </a>
+              <h3>SEO y Content Marketing</h3>
+              <p class="credential-issuer">Formación SEO y marketing de contenidos</p>
+              <p>Optimización de contenidos, estructura web, palabras clave y planificación editorial.</p>
+              <a class="btn btn-outline" href="1108_fodorcristinacf@gmail.com.pdf" target="_blank" rel="noopener noreferrer">Ver certificado</a>
+            </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section-panel trajectory-section" id="trayectoria">
+        <div class="container trajectory-layout">
+          <aside class="trajectory-intro reveal">
+            <p class="eyebrow with-line">Trayectoria</p>
+            <h2>Experiencia y formación</h2>
+            <p>Una base práctica en atención al cliente, gestión y comunicación digital, conectada con formación actual en IA, automatización y herramientas digitales.</p>
+          </aside>
+          <div class="trajectory-panels">
+            <section class="trajectory-card experience-card reveal">
+              <div class="trajectory-card-title"><span class="trajectory-icon trajectory-icon-briefcase" aria-hidden="true"></span><h3>Experiencia profesional</h3></div>
+              <div class="experience-list">
+                <article><span>Entornos social, sanitario y servicios</span><p>Experiencia en atención al cliente, comunicación con usuarios, resolución de dudas y adaptación a contextos dinámicos.</p></article>
+                <article><span>Atención al cliente, gestión de tareas y trabajo en equipo</span><p>Organización de tareas, comunicación clara, resolución de incidencias y colaboración con equipos.</p></article>
+                <article><span>Proyecto ecommerce propio</span><p>Creación y gestión de una tienda online, redes sociales, contenido digital, SEO, análisis y comunicación con clientes.</p></article>
+              </div>
+            </section>
+            <section class="trajectory-card academic-card reveal">
+              <div class="trajectory-card-title"><span class="trajectory-icon trajectory-icon-academic" aria-hidden="true"></span><h3>Formación académica</h3></div>
+              <div class="academic-list">
+                <article><span>CFGM Farmacia y Parafarmacia</span><p>IES Ribera del Tajo <strong>2022 – 2026</strong></p></article>
+                <article><span>CFGM Auxiliar de Enfermería</span><p>Ébora Formación <strong>2022 – 2023</strong></p></article>
+                <article><span>CFGS Animación Sociocultural y Turística</span><p>IES Puerta de Cuartos <strong>2019 – 2021</strong></p></article>
+              </div>
+            </section>
+            <section class="trajectory-card training-card reveal">
+              <div class="trajectory-card-title"><span class="trajectory-icon trajectory-icon-laptop" aria-hidden="true"></span><h3>Formación en IA, marketing y digitalización</h3></div>
+              <div class="training-table">
+                <article><time>03/26 — actual</time><span>Programa Superior Universitario en Inteligencia Artificial Aplicada a la Empresa</span><small>Universidad de Nebrija / CEOE Fedeto <em class="credit-note">27 créditos universitarios</em></small><p>Automatización, asistentes virtuales, herramientas no-code, aplicación de IA en empresa, ética y legislación.</p></article>
+                <article><time>10/25 — 11/25</time><span>Gestión de los Negocios Online 2.0</span><small>Tecnas Servicios Integrales de Formación y Desarrollo S.L.L.</small><p>Ecommerce, marketing digital y gestión de negocios online.</p></article>
+                <article><time>10/24 — 12/24</time><span>Proyectos de Business Intelligence, estrategias y herramientas</span><small>CEOE / CEPYME Guadalajara</small><p>Análisis de datos y uso de herramientas BI para la toma de decisiones.</p></article>
+                <article><time>09/24 — 10/24</time><span>Community Manager, herramientas, analíticas e informes</span><small>CEOE Fedeto</small><p>Gestión de redes sociales, análisis de métricas y reporting.</p></article>
+                <article><time>10/20 — 12/20</time><span>Habilidades digitales</span><small>Cloud Incubator HUB / Universidad Politécnica de Cartagena</small><p>Diseño web, ecommerce y marketing digital.</p></article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel faq-contact-section">
+        <div class="container faq-grid" id="faq">
+          <div class="faq-intro reveal">
+            <p class="eyebrow with-line">FAQ</p>
+            <h2>Lo que conviene saber</h2>
+            <p>Respuestas claras sobre mi forma de trabajar, herramientas y tipo de soluciones.</p>
+          </div>
+          <div class="accordion-list reveal">
+            <details open><summary><span>01</span>¿Qué tipo de soluciones desarrollo?</summary><p>Creo asistentes virtuales, chatbots, automatizaciones, recursos de contenido y estructuras digitales pensadas para simplificar tareas y mejorar la comunicación.</p></details>
+            <details><summary><span>02</span>¿Para qué tipo de proyectos encaja mi perfil?</summary><p>Para pequeños negocios, profesionales, tiendas online y proyectos digitales que quieren aplicar IA de forma clara, práctica y fácil de mantener.</p></details>
+            <details><summary><span>03</span>¿Qué herramientas utilizo?</summary><p>Trabajo con ChatGPT, Gemini, Copilot, Claude, Make, Metricool, Notion, Google Workspace, Microsoft Office, Python, SEO, marketing digital y automatización.</p></details>
+            <details><summary><span>04</span>¿Puedo ayudar con atención al cliente?</summary><p>Sí. Puedo crear asistentes y chatbots que respondan dudas frecuentes, orienten al usuario y reduzcan tareas repetitivas.</p></details>
+            <details><summary><span>05</span>¿También trabajo contenido digital?</summary><p>Sí. Puedo crear ideas de contenido, textos, calendarios, publicaciones y estructuras adaptadas al tono y objetivo del negocio.</p></details>
+            <details><summary><span>06</span>¿Cómo sería una colaboración?</summary><p>Primero reviso la necesidad del proyecto, después propongo una solución sencilla y visual, y finalmente preparo los recursos o automatizaciones necesarios.</p></details>
+          </div>
+        </div>
+        <div class="container contact-shell reveal" id="contacto">
+          <div class="contact-copy">
+            <p class="eyebrow with-line">Contacto</p>
+            <h2>¿Tienes una idea que necesita forma?</h2>
+            <p>Si tienes un proyecto, negocio o proceso que necesita más claridad, puedo ayudarte a darle forma con soluciones digitales sencillas, útiles y bien estructuradas.</p>
+            <p>Escríbeme para hablar sobre asistentes virtuales, automatización, contenido digital o mejoras en tu presencia online.</p>
+          </div>
+          <form class="contact-form" action="mailto:fodorcristinacf@gmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="contact-name">Nombre</label>
+              <input id="contact-name" name="Nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Correo electrónico</label>
+              <input id="contact-email" name="Correo" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row form-row-full">
+              <label for="contact-message">Mensaje</label>
+              <textarea id="contact-message" name="Mensaje" rows="5" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+              <a class="text-link" href="https://www.linkedin.com/in/cristina-boroc-fodor-b8a985159/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </form>
         </div>
       </section>
     </main>
 
     <aside class="assistant-widget is-collapsed" data-assistant-widget>
-      <button
-        class="assistant-trigger"
-        type="button"
-        aria-label="Abrir asistente virtual"
-        aria-expanded="false"
-        data-assistant-mobile-trigger
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4.75 5.75A3.75 3.75 0 0 1 8.5 2h7a3.75 3.75 0 0 1 3.75 3.75v5.5A3.75 3.75 0 0 1 15.5 15h-3.9l-4.18 3.24A.9.9 0 0 1 6 17.53V15.1a3.75 3.75 0 0 1-1.25-2.8V5.75Zm3.75-2A2 2 0 0 0 6.5 5.75v6.55c0 .65.31 1.26.84 1.64l.41.3v1.45l3.25-2.52h4.5a2 2 0 0 0 2-2V5.75a2 2 0 0 0-2-2h-7Z" />
-        </svg>
-        <span>&#191;En qu&eacute; puedo ayudarte?</span>
+      <button class="assistant-trigger" type="button" aria-label="Abrir asistente virtual" aria-expanded="false" data-assistant-mobile-trigger>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.75 5.75A3.75 3.75 0 0 1 8.5 2h7a3.75 3.75 0 0 1 3.75 3.75v5.5A3.75 3.75 0 0 1 15.5 15h-3.9l-4.18 3.24A.9.9 0 0 1 6 17.53V15.1a3.75 3.75 0 0 1-1.25-2.8V5.75Zm3.75-2A2 2 0 0 0 6.5 5.75v6.55c0 .65.31 1.26.84 1.64l.41.3v1.45l3.25-2.52h4.5a2 2 0 0 0 2-2V5.75a2 2 0 0 0-2-2h-7Z" /></svg>
+        <span>¿En qué puedo ayudarte?</span>
       </button>
-
       <div class="assistant-panel" data-assistant-panel>
         <div class="assistant-panel-header">
-          <div>
-            <p class="assistant-title">Asistente virtual</p>
-            <span>Sobre Cristina y su portfolio</span>
-          </div>
-          <button
-            class="assistant-minimize"
-            type="button"
-            aria-label="Minimizar asistente"
-            data-assistant-toggle
-          >
-            −
-          </button>
+          <div><p class="assistant-title">Asistente virtual</p><span>Sobre Cristina y su portfolio</span></div>
+          <button class="assistant-minimize" type="button" aria-label="Minimizar asistente" data-assistant-toggle>-</button>
         </div>
-
         <div class="assistant-panel-body">
           <div class="assistant-messages" data-assistant-messages></div>
-
           <div class="assistant-suggestions">
             <button type="button" data-suggestion>¿Quién es Cristina?</button>
             <button type="button" data-suggestion>¿Qué proyectos tiene?</button>
@@ -589,14 +366,8 @@
             <button type="button" data-suggestion>¿En qué puede ayudar?</button>
             <button type="button" data-suggestion>¿Cómo puedo contactar?</button>
           </div>
-
           <form class="assistant-form" data-assistant-form>
-            <input
-              type="text"
-              name="message"
-              placeholder="Escribe tu pregunta"
-              autocomplete="off"
-            />
+            <input type="text" name="message" placeholder="Escribe tu pregunta" autocomplete="off" />
             <button type="submit">Enviar</button>
           </form>
         </div>

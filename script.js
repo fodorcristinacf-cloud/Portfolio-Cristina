@@ -11,13 +11,13 @@ if (revealItems.length) {
       });
     },
     {
-      threshold: 0.16,
+      threshold: 0.14,
       rootMargin: "0px 0px -6% 0px",
     },
   );
 
   revealItems.forEach((item, index) => {
-    item.style.setProperty("--delay", `${Math.min(index * 40, 220)}ms`);
+    item.style.setProperty("--delay", `${Math.min(index * 35, 210)}ms`);
     observer.observe(item);
   });
 }
@@ -41,49 +41,92 @@ if (navToggle && navMenu) {
   });
 }
 
+const toolAreaButtons = document.querySelectorAll("[data-tool-area]");
+const toolCards = document.querySelectorAll(".tools-grid article[data-category]");
+
+if (toolAreaButtons.length && toolCards.length) {
+  const setActiveToolArea = (activeButton) => {
+    toolAreaButtons.forEach((button) => {
+      button.classList.toggle("is-active", button === activeButton);
+    });
+  };
+
+  const filterToolsByArea = (area) => {
+    toolCards.forEach((card) => {
+      card.classList.toggle("is-tool-hidden", card.dataset.category !== area);
+    });
+  };
+
+  const focusToolCard = (card) => {
+    toolCards.forEach((item) => item.classList.remove("is-tool-focus"));
+    card.classList.add("is-tool-focus");
+    window.setTimeout(() => {
+      card.classList.remove("is-tool-focus");
+    }, 1600);
+  };
+
+  toolAreaButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetId = button.dataset.toolTarget;
+      const area = button.dataset.toolArea;
+      const targetCard =
+        (targetId ? document.getElementById(targetId) : null) ||
+        Array.from(toolCards).find((card) => card.dataset.category === area);
+
+      setActiveToolArea(button);
+      filterToolsByArea(area);
+
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        focusToolCard(targetCard);
+      }
+    });
+  });
+
+  const initialButton = document.querySelector("[data-tool-area].is-active") || toolAreaButtons[0];
+  if (initialButton) {
+    filterToolsByArea(initialButton.dataset.toolArea);
+  }
+}
+
 const assistantWidget = document.querySelector("[data-assistant-widget]");
 const assistantPanel = document.querySelector("[data-assistant-panel]");
 const assistantToggle = document.querySelector("[data-assistant-toggle]");
 const assistantMobileTrigger = document.querySelector("[data-assistant-mobile-trigger]");
 const assistantMessages = document.querySelector("[data-assistant-messages]");
 const assistantForm = document.querySelector("[data-assistant-form]");
-const assistantResponseDelay = 3000;
+const assistantResponseDelay = 650;
 
 const knowledge = [
   {
-    test: /qu[ií]en|qui[eé]n es cristina|sobre cristina|perfil/i,
+    test: /quien|quién|cristina|sobre mi|sobre mí|perfil/i,
     answer:
-      "Cristina Boroc Fodor trabaja con IA aplicada, automatización y herramientas digitales para ayudar a mejorar procesos, presencia online y organización en proyectos y pequeños negocios.",
+      "Cristina Boroc Fodor se está especializando en IA aplicada, automatización y soluciones digitales para pequeños negocios. Combina atención al cliente, gestión, comunicación y herramientas digitales para crear recursos claros y prácticos.",
   },
   {
-    test: /proyectos|trabajos|portfolio|portafolio/i,
+    test: /proyectos|trabajos|portfolio|portafolio|gpt|avatar|celador|its lava|serina|serinawear|ecommerce/i,
     answer:
-      "En el portfolio aparecen cuatro líneas principales: Mi GPT para contenido con IA, Avatar digital, Chatbot Celador IA y una demo de asistente virtual para ITS LAVA orientada a atención al cliente.",
+      "Sus proyectos principales son: un GPT para ideas de contenido, un avatar digital con IA, el Chatbot Celador IA, una demo de asistente virtual para ITS LAVA y SerinaWear, su proyecto ecommerce propio de bolsos.",
   },
   {
-    test: /its lava|itslava|atención al cliente|atencion al cliente/i,
+    test: /herramientas|usa|utiliza|habilidades|tecnolog/i,
     answer:
-      "Dentro de proyectos hay una demo de asistente virtual para ITS LAVA, pensada para resolver dudas sobre pedidos, envíos, devoluciones, cambios, tiendas físicas y contacto.",
+      "Trabaja con ChatGPT, Copilot, Gemini, Claude, Make, Metricool, Notion, Google Workspace, Microsoft Office, Python, SEO, Content Marketing y diseño conversacional.",
   },
   {
-    test: /herramientas|usa|utiliza|tecnolog/i,
+    test: /ayuda|puede ayudar|servicios|hace|negocio|pyme/i,
     answer:
-      "Trabaja con ChatGPT, Gemini, Copilot, Claude, Make, Notion, Metricool, Google Workspace, Microsoft Office y recursos de automatización, chatbots y contenido con IA.",
+      "Puede ayudar con asistentes virtuales, chatbots, automatizaciones con Make, contenido con IA, organización digital, SEO aplicado y mejora de la atención al cliente.",
   },
   {
-    test: /ayuda|puede ayudar|servicios|hace/i,
+    test: /experiencia|trayectoria|formacion|formación|certificado|certificaciones/i,
     answer:
-      "Puede ayudar con asistentes virtuales, automatización de procesos, contenido con IA, digitalización para pymes, presencia web y soluciones conversacionales orientadas a negocio.",
+      "Su trayectoria conecta atención al cliente, gestión de tareas, trabajo en equipo, ecommerce propio, marketing digital, Business Intelligence, Python, Make, Copilot, SEO y Content Marketing.",
   },
   {
-    test: /experiencia|trayectoria|formaci[oó]n/i,
+    test: /contacto|correo|email|linkedin|escribir/i,
     answer:
-      "Su trayectoria combina un ecommerce propio, experiencia transferible en atención al cliente y gestión, y formación en IA aplicada, marketing digital, business intelligence, Python y habilidades digitales.",
-  },
-  {
-    test: /contacto|correo|email|escribir/i,
-    answer:
-      "Puedes contactar con Cristina en fodorcristinacf@gmail.com.",
+      "Puedes contactar con Cristina en fodorcristinacf@gmail.com o desde su LinkedIn: linkedin.com/in/cristina-boroc-fodor-b8a985159/",
   },
 ];
 
@@ -103,7 +146,7 @@ function getAssistantReply(input) {
   const cleanInput = input.trim();
 
   if (!cleanInput) {
-    return "Puedes preguntarme por Cristina, sus proyectos, herramientas, experiencia o cómo contactar.";
+    return "Puedes preguntarme por Cristina, sus proyectos, habilidades, certificaciones, trayectoria o contacto.";
   }
 
   const match = knowledge.find((item) => item.test.test(cleanInput));
@@ -112,7 +155,7 @@ function getAssistantReply(input) {
     return match.answer;
   }
 
-  return "Puedo ayudarte con información sobre Cristina, sus proyectos, las herramientas que utiliza, su experiencia y la forma de contacto.";
+  return "Puedo ayudarte con información sobre Cristina, sus proyectos de IA aplicada, herramientas, certificaciones, trayectoria y forma de contacto.";
 }
 
 if (assistantWidget && assistantPanel && assistantMessages) {
@@ -124,7 +167,7 @@ if (assistantWidget && assistantPanel && assistantMessages) {
       return;
     }
 
-    appendAssistantMessage("\u00bfEn qu\u00e9 puedo ayudarte?", "bot");
+    appendAssistantMessage("¿En qué puedo ayudarte?", "bot");
     assistantHasGreeted = true;
   };
 

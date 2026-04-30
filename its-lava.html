@@ -11,60 +11,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="project-page itslava-page">
-    <div class="page-glow page-glow-a"></div>
-    <div class="page-glow page-glow-b"></div>
-
     <header class="site-header">
       <nav class="navbar container">
         <a class="brand" href="index.html#proyectos">
           <span class="brand-mark">CBF</span>
-          <span class="brand-text">Volver al portfolio</span>
-        </a>
-        <a class="btn btn-primary" href="https://itslava.es/" target="_blank" rel="noreferrer">
-          Ver web oficial
+          <strong>← Volver al portfolio</strong>
         </a>
       </nav>
     </header>
 
-    <main class="section">
+    <main class="itslava-main">
       <div class="container itslava-grid">
         <section class="itslava-overview reveal">
-          <p class="eyebrow">DEMO DE ATENCIÓN AL CLIENTE</p>
-          <h1>Asistente virtual <span class="script-word">ITS LAVA</span></h1>
-          <p class="lead">
-            Demo para una marca española de bolsos y accesorios veganos confeccionados
-            en España. Responde con información base sobre pedidos, envíos, cambios,
-            devoluciones, tiendas físicas y contacto.
-          </p>
+          <p class="eyebrow">Demo de atención al cliente</p>
+          <h1>Asistente virtual ITS LAVA</h1>
+          <span class="itslava-title-line" aria-hidden="true"></span>
+          <p>Demo de asistente virtual para una tienda online de moda, creada para ofrecer una atención más ágil, clara y organizada durante el proceso de compra.</p>
 
           <div class="chip-row">
             <span class="chip">ITS LAVA</span>
             <span class="chip">Moda online</span>
-            <span class="chip">Asistente oficial</span>
-            <span class="chip">Soporte breve y ordenado</span>
+            <span class="chip">Atención al cliente</span>
+            <span class="chip">Ecommerce</span>
           </div>
 
           <div class="itslava-note-grid">
             <article>
-              <span class="note-kicker">Cobertura</span>
-              <strong>Pedidos, envíos y devoluciones</strong>
-              <p>También resuelve dudas sobre tiendas físicas, horarios y contacto.</p>
+              <i aria-hidden="true">◎</i>
+              <div><span class="note-kicker">Objetivo</span><p>Mejorar la experiencia del cliente y facilitar la resolución de consultas frecuentes.</p></div>
             </article>
             <article>
-              <span class="note-kicker">Tono</span>
-              <strong>Profesional y cercano</strong>
-              <p>Respuestas breves, útiles y sin inventar información fuera de la ficha.</p>
+              <i aria-hidden="true">▱</i>
+              <div><span class="note-kicker">Funciones</span><p>Pedidos, envíos, cambios, devoluciones, tiendas físicas y contacto.</p></div>
             </article>
             <article>
-              <span class="note-kicker">Escalado</span>
-              <strong>Derivación a soporte humano</strong>
-              <p>En consultas sensibles o complejas remite a hola@itslava.es.</p>
+              <i aria-hidden="true">✧</i>
+              <div><span class="note-kicker">Valor del proyecto</span><p>Muestra cómo un asistente virtual puede reducir consultas repetitivas y mejorar la atención al cliente en ecommerce.</p></div>
             </article>
           </div>
         </section>
@@ -76,7 +64,7 @@
                 <div class="assistant-avatar">IL</div>
                 <div>
                   <strong>Asistente Virtual ITS LAVA</strong>
-                  <p>Bolsos y accesorios veganos confeccionados en España</p>
+                  <p>Soporte para ecommerce de moda</p>
                 </div>
               </div>
               <a href="mailto:hola@itslava.es" class="status-pill">hola@itslava.es</a>
@@ -84,23 +72,18 @@
 
             <div class="assistant-messages itslava-messages" data-itslava-messages></div>
 
+            <form class="assistant-form itslava-form" data-itslava-form>
+              <input type="text" name="message" placeholder="Escribe tu mensaje..." autocomplete="off" />
+              <button type="submit">Enviar</button>
+            </form>
+
             <div class="assistant-suggestions itslava-suggestions">
               <button type="button" data-itslava-suggestion>¿Cómo hago un pedido?</button>
               <button type="button" data-itslava-suggestion>¿Cuánto tarda mi pedido?</button>
               <button type="button" data-itslava-suggestion>¿Cómo devuelvo un artículo?</button>
-              <button type="button" data-itslava-suggestion>¿Dónde estáis en tienda física?</button>
+              <button type="button" data-itslava-suggestion>¿Dónde está mi pedido?</button>
               <button type="button" data-itslava-suggestion>¿Cómo puedo contactar?</button>
             </div>
-
-            <form class="assistant-form itslava-form" data-itslava-form>
-              <input
-                type="text"
-                name="message"
-                placeholder="Pregunta por ITS LAVA"
-                autocomplete="off"
-              />
-              <button type="submit">Enviar</button>
-            </form>
           </article>
         </section>
       </div>
