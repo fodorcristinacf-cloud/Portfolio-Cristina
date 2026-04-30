@@ -3098,7 +3098,7 @@ p {
 }
 
 .celador-page .container {
-  width: min(1420px, calc(100vw - clamp(32px, 8vw, 150px)));
+  width: min(1360px, calc(100vw - clamp(34px, 9vw, 170px)));
 }
 
 .celador-page .site-header {
@@ -3156,13 +3156,13 @@ p {
   min-height: calc(100dvh - clamp(64px, 6.8vw, 92px));
   display: grid;
   align-items: center;
-  padding: clamp(22px, 2.5vw, 30px) 0 clamp(34px, 3.8vw, 48px);
+  padding: clamp(16px, 1.8vw, 24px) 0 clamp(22px, 2.4vw, 34px);
 }
 
 .celador-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.98fr) minmax(0, 1fr);
-  gap: clamp(24px, 2.6vw, 36px);
+  gap: clamp(20px, 2.1vw, 30px);
   align-items: stretch;
 }
 
@@ -3178,20 +3178,20 @@ p {
 .celador-hero {
   display: grid;
   align-content: center;
-  gap: clamp(15px, 1.55vw, 24px);
-  padding: clamp(30px, 3.3vw, 46px) clamp(28px, 3.4vw, 48px);
+  gap: clamp(12px, 1.18vw, 18px);
+  padding: clamp(24px, 2.65vw, 38px) clamp(24px, 2.9vw, 42px);
 }
 
 .celador-hero .eyebrow {
   color: #ff2c85;
-  font-size: clamp(0.78rem, 0.92vw, 0.96rem);
+  font-size: clamp(0.72rem, 0.82vw, 0.88rem);
   letter-spacing: 0.32em;
 }
 
 .celador-hero h1 {
   max-width: 12ch;
   color: var(--celador-ink);
-  font-size: clamp(3.45rem, 4.9vw, 5.45rem);
+  font-size: clamp(3rem, 4.25vw, 4.8rem);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -3203,17 +3203,17 @@ p {
 }
 
 .celador-hero p:not(.eyebrow) {
-  max-width: 40rem;
+  max-width: 38rem;
   color: #2e2634;
-  font-size: clamp(0.92rem, 1.05vw, 1.12rem);
-  line-height: 1.68;
+  font-size: clamp(0.84rem, 0.95vw, 1rem);
+  line-height: 1.58;
 }
 
 .celador-benefits {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
-  margin-top: clamp(8px, 1vw, 14px);
+  margin-top: clamp(4px, 0.75vw, 10px);
 }
 
 .celador-benefits article {
@@ -3221,8 +3221,8 @@ p {
   justify-items: center;
   align-content: start;
   gap: 0.55rem;
-  min-height: 122px;
-  padding: 0 clamp(10px, 1.5vw, 24px);
+  min-height: 104px;
+  padding: 0 clamp(8px, 1.2vw, 18px);
   text-align: center;
 }
 
@@ -3242,8 +3242,8 @@ p {
 }
 
 .celador-benefits i {
-  width: clamp(54px, 4vw, 70px);
-  height: clamp(54px, 4vw, 70px);
+  width: clamp(46px, 3.5vw, 60px);
+  height: clamp(46px, 3.5vw, 60px);
   margin-bottom: 0.1rem;
 }
 
@@ -3260,35 +3260,35 @@ p {
 
 .celador-benefits strong {
   color: #120d12;
-  font-size: clamp(0.86rem, 0.92vw, 0.98rem);
+  font-size: clamp(0.8rem, 0.86vw, 0.9rem);
   line-height: 1.25;
 }
 
 .celador-benefits p {
   max-width: 14.5rem;
   color: #352a35;
-  font-size: clamp(0.76rem, 0.82vw, 0.88rem);
-  line-height: 1.6;
+  font-size: clamp(0.7rem, 0.76vw, 0.8rem);
+  line-height: 1.48;
 }
 
 .celador-panel {
   display: grid;
   align-items: center;
-  padding: clamp(22px, 2.15vw, 30px);
+  padding: clamp(16px, 1.65vw, 24px);
 }
 
 .celador-card-list {
   display: grid;
-  gap: clamp(16px, 1.45vw, 22px);
+  gap: clamp(12px, 1.05vw, 16px);
 }
 
 .celador-card-list article {
   display: grid;
-  grid-template-columns: clamp(68px, 5.7vw, 90px) minmax(0, 1fr);
-  gap: clamp(16px, 1.8vw, 26px);
+  grid-template-columns: clamp(58px, 4.8vw, 76px) minmax(0, 1fr);
+  gap: clamp(12px, 1.35vw, 20px);
   align-items: center;
-  min-height: clamp(106px, 11vh, 138px);
-  padding: clamp(16px, 1.6vw, 24px);
+  min-height: clamp(84px, 9vh, 112px);
+  padding: clamp(12px, 1.22vw, 18px);
   border: 1px solid var(--celador-border);
   border-radius: clamp(15px, 1.2vw, 20px);
   background: rgba(255, 255, 255, 0.66);
@@ -3296,23 +3296,159 @@ p {
 }
 
 .celador-card-list i {
-  width: clamp(58px, 4.4vw, 74px);
-  height: clamp(58px, 4.4vw, 74px);
+  width: clamp(48px, 3.75vw, 62px);
+  height: clamp(48px, 3.75vw, 62px);
 }
 
 .celador-card-list h2 {
   max-width: none;
   color: var(--celador-ink);
-  font-size: clamp(1.12rem, 1.35vw, 1.45rem);
+  font-size: clamp(1rem, 1.12vw, 1.2rem);
   line-height: 1.15;
 }
 
 .celador-card-list p {
-  max-width: 38rem;
-  margin-top: 0.42rem;
+  max-width: 34rem;
+  margin-top: 0.24rem;
   color: #2e2634;
-  font-size: clamp(0.86rem, 0.98vw, 1.04rem);
-  line-height: 1.62;
+  font-size: clamp(0.76rem, 0.86vw, 0.9rem);
+  line-height: 1.48;
+}
+
+.celador-chat-callout {
+  position: fixed;
+  right: clamp(82px, 7vw, 120px);
+  bottom: clamp(22px, 2.8vw, 42px);
+  z-index: 60;
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  pointer-events: none;
+}
+
+.celador-chat-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.78rem;
+  width: min(330px, calc(100vw - 140px));
+  padding: 0.88rem 2.55rem 0.82rem 0.9rem;
+  border: 1.5px solid rgba(225, 37, 117, 0.72);
+  border-radius: 14px;
+  color: #231b24;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 16px 42px rgba(126, 1, 69, 0.14);
+  text-align: left;
+  pointer-events: auto;
+  transition: width 180ms ease, padding 180ms ease, border-radius 180ms ease, transform 180ms ease;
+}
+
+.celador-chat-card::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 52%;
+  width: 23px;
+  height: 23px;
+  border-top: 1.5px solid rgba(225, 37, 117, 0.72);
+  border-right: 1.5px solid rgba(225, 37, 117, 0.72);
+  background: rgba(255, 255, 255, 0.96);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.celador-chat-avatar {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, #e12575, #7e0145);
+  box-shadow: 0 14px 28px rgba(126, 1, 69, 0.24);
+}
+
+.celador-chat-avatar svg {
+  width: 35px;
+  height: 35px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.celador-chat-copy {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.celador-chat-copy strong {
+  color: var(--celador-ink);
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.celador-chat-copy span {
+  color: #2f2932;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.celador-chat-toggle {
+  position: absolute;
+  z-index: 2;
+  right: 0.92rem;
+  top: 0.82rem;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid rgba(225, 37, 117, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 247, 252, 0.95);
+  pointer-events: auto;
+}
+
+.celador-chat-toggle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #ff2c85;
+  border-bottom: 2px solid #ff2c85;
+  transform: translate(-50%, -65%) rotate(45deg);
+  transition: transform 180ms ease;
+}
+
+.celador-chat-callout.is-minimized .celador-chat-card {
+  grid-template-columns: 1fr;
+  width: 210px;
+  min-height: 48px;
+  padding: 0.8rem 2.75rem 0.8rem 1rem;
+  border-radius: 999px;
+}
+
+.celador-chat-callout.is-minimized .celador-chat-card::after,
+.celador-chat-callout.is-minimized .celador-chat-avatar,
+.celador-chat-callout.is-minimized .celador-chat-copy span {
+  display: none;
+}
+
+.celador-chat-callout.is-minimized .celador-chat-copy strong {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.celador-chat-callout.is-minimized .celador-chat-toggle::before {
+  transform: translate(-50%, -35%) rotate(225deg);
+}
+
+.celador-page iframe[src*="chatbase"],
+.celador-page [id*="chatbase"],
+.celador-page [class*="chatbase"] {
+  filter: drop-shadow(0 18px 34px rgba(126, 1, 69, 0.28));
 }
 
 @media (max-width: 1180px) {
@@ -3331,6 +3467,22 @@ p {
 
   .celador-hero h1 {
     max-width: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .celador-chat-callout {
+    right: 20px;
+    bottom: 82px;
+    align-items: flex-end;
+  }
+
+  .celador-chat-card {
+    width: min(310px, calc(100vw - 40px));
+  }
+
+  .celador-chat-callout.is-minimized .celador-chat-card {
+    width: 205px;
   }
 }
 
@@ -3359,7 +3511,7 @@ p {
   }
 
   .celador-main {
-    padding: 20px 0 32px;
+    padding: 18px 0 28px;
   }
 
   .celador-grid {
@@ -3372,7 +3524,7 @@ p {
   }
 
   .celador-hero {
-    padding: 30px 22px;
+    padding: 24px 20px;
   }
 
   .celador-hero .eyebrow {
@@ -3416,10 +3568,55 @@ p {
     grid-template-columns: 1fr;
     gap: 14px;
     min-height: auto;
-    padding: 22px;
+    padding: 18px;
   }
 
   .celador-card-list h2 {
     font-size: 1.32rem;
+  }
+
+  .celador-chat-callout {
+    left: 12px;
+    right: 12px;
+    bottom: 78px;
+  }
+
+  .celador-chat-card {
+    width: 100%;
+    grid-template-columns: auto 1fr;
+    gap: 0.82rem;
+    padding: 0.86rem 2.55rem 0.86rem 0.86rem;
+    border-radius: 16px;
+  }
+
+  .celador-chat-card::after {
+    display: none;
+  }
+
+  .celador-chat-avatar {
+    width: 46px;
+    height: 46px;
+  }
+
+  .celador-chat-avatar svg {
+    width: 31px;
+    height: 31px;
+  }
+
+  .celador-chat-copy strong {
+    font-size: 0.96rem;
+  }
+
+  .celador-chat-copy span {
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .celador-chat-callout.is-minimized {
+    left: auto;
+  }
+
+  .celador-chat-callout.is-minimized .celador-chat-card {
+    width: 198px;
   }
 }

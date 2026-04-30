@@ -38,3 +38,26 @@ if (document.body.classList.contains("project-page")) {
     }
   })();
 }
+
+const celadorChatOpen = document.querySelector("[data-celador-chat-open]");
+const celadorChatCallout = document.querySelector(".celador-chat-callout");
+const celadorChatMinimize = document.querySelector("[data-celador-chat-minimize]");
+
+if (celadorChatOpen) {
+  celadorChatOpen.addEventListener("click", () => {
+    if (window.chatbase) {
+      window.chatbase("open");
+    }
+  });
+}
+
+if (celadorChatCallout && celadorChatMinimize) {
+  celadorChatMinimize.addEventListener("click", () => {
+    const isMinimized = celadorChatCallout.classList.toggle("is-minimized");
+    celadorChatMinimize.setAttribute("aria-expanded", String(!isMinimized));
+    celadorChatMinimize.setAttribute(
+      "aria-label",
+      isMinimized ? "Desplegar aviso del chat" : "Minimizar aviso del chat",
+    );
+  });
+}
