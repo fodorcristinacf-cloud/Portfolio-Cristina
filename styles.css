@@ -3076,3 +3076,350 @@ p {
     width: 100%;
   }
 }
+
+/* Vista de detalle: Chatbot Celador SESCAM */
+.celador-page {
+  --celador-ink: #7e0145;
+  --celador-text: #302235;
+  --celador-soft: #fff7fc;
+  --celador-card: rgba(255, 255, 255, 0.86);
+  --celador-border: rgba(225, 37, 117, 0.18);
+  --celador-shadow: 0 24px 70px rgba(126, 1, 69, 0.08);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 3% 96%, rgba(225, 37, 117, 0.08), transparent 28rem),
+    radial-gradient(circle at 100% 34%, rgba(225, 37, 117, 0.07), transparent 30rem),
+    linear-gradient(180deg, #fffafd 0%, #fff3f9 100%);
+}
+
+.celador-page::before,
+.celador-page::after {
+  display: none;
+}
+
+.celador-page .container {
+  width: min(1420px, calc(100vw - clamp(32px, 8vw, 150px)));
+}
+
+.celador-page .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(126, 1, 69, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
+}
+
+.celador-page .navbar {
+  justify-content: flex-start;
+  min-height: clamp(64px, 6.8vw, 92px);
+}
+
+.celador-page .brand {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(16px, 1.7vw, 24px);
+  min-width: 0;
+}
+
+.celador-page .brand-mark {
+  width: clamp(48px, 4vw, 64px);
+  height: clamp(48px, 4vw, 64px);
+  font-size: clamp(0.92rem, 0.95vw, 1.08rem);
+  box-shadow: 0 14px 28px rgba(126, 1, 69, 0.16);
+}
+
+.brand-project-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  min-width: 0;
+  color: var(--celador-text);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(0.94rem, 1.05vw, 1.12rem);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand-project-text strong {
+  color: var(--celador-ink);
+  font-weight: 700;
+}
+
+.brand-project-text > span:last-child {
+  color: #1f1720;
+  font-weight: 500;
+}
+
+.celador-main {
+  min-height: calc(100dvh - clamp(64px, 6.8vw, 92px));
+  display: grid;
+  align-items: center;
+  padding: clamp(22px, 2.5vw, 30px) 0 clamp(34px, 3.8vw, 48px);
+}
+
+.celador-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.98fr) minmax(0, 1fr);
+  gap: clamp(24px, 2.6vw, 36px);
+  align-items: stretch;
+}
+
+.celador-hero,
+.celador-panel {
+  min-height: auto;
+  border: 1px solid rgba(126, 1, 69, 0.07);
+  border-radius: clamp(20px, 1.9vw, 28px);
+  background: var(--celador-card);
+  box-shadow: var(--celador-shadow);
+}
+
+.celador-hero {
+  display: grid;
+  align-content: center;
+  gap: clamp(15px, 1.55vw, 24px);
+  padding: clamp(30px, 3.3vw, 46px) clamp(28px, 3.4vw, 48px);
+}
+
+.celador-hero .eyebrow {
+  color: #ff2c85;
+  font-size: clamp(0.78rem, 0.92vw, 0.96rem);
+  letter-spacing: 0.32em;
+}
+
+.celador-hero h1 {
+  max-width: 12ch;
+  color: var(--celador-ink);
+  font-size: clamp(3.45rem, 4.9vw, 5.45rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.celador-title-line {
+  width: clamp(48px, 3.6vw, 62px);
+  height: 2px;
+  background: #ff54a5;
+}
+
+.celador-hero p:not(.eyebrow) {
+  max-width: 40rem;
+  color: #2e2634;
+  font-size: clamp(0.92rem, 1.05vw, 1.12rem);
+  line-height: 1.68;
+}
+
+.celador-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin-top: clamp(8px, 1vw, 14px);
+}
+
+.celador-benefits article {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 122px;
+  padding: 0 clamp(10px, 1.5vw, 24px);
+  text-align: center;
+}
+
+.celador-benefits article + article {
+  border-left: 1px solid rgba(225, 37, 117, 0.2);
+}
+
+.celador-benefits i,
+.celador-card-list i {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: var(--celador-ink);
+  background: rgba(225, 37, 117, 0.1);
+  font-style: normal;
+}
+
+.celador-benefits i {
+  width: clamp(54px, 4vw, 70px);
+  height: clamp(54px, 4vw, 70px);
+  margin-bottom: 0.1rem;
+}
+
+.celador-benefits svg,
+.celador-card-list svg {
+  width: 52%;
+  height: 52%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.celador-benefits strong {
+  color: #120d12;
+  font-size: clamp(0.86rem, 0.92vw, 0.98rem);
+  line-height: 1.25;
+}
+
+.celador-benefits p {
+  max-width: 14.5rem;
+  color: #352a35;
+  font-size: clamp(0.76rem, 0.82vw, 0.88rem);
+  line-height: 1.6;
+}
+
+.celador-panel {
+  display: grid;
+  align-items: center;
+  padding: clamp(22px, 2.15vw, 30px);
+}
+
+.celador-card-list {
+  display: grid;
+  gap: clamp(16px, 1.45vw, 22px);
+}
+
+.celador-card-list article {
+  display: grid;
+  grid-template-columns: clamp(68px, 5.7vw, 90px) minmax(0, 1fr);
+  gap: clamp(16px, 1.8vw, 26px);
+  align-items: center;
+  min-height: clamp(106px, 11vh, 138px);
+  padding: clamp(16px, 1.6vw, 24px);
+  border: 1px solid var(--celador-border);
+  border-radius: clamp(15px, 1.2vw, 20px);
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: none;
+}
+
+.celador-card-list i {
+  width: clamp(58px, 4.4vw, 74px);
+  height: clamp(58px, 4.4vw, 74px);
+}
+
+.celador-card-list h2 {
+  max-width: none;
+  color: var(--celador-ink);
+  font-size: clamp(1.12rem, 1.35vw, 1.45rem);
+  line-height: 1.15;
+}
+
+.celador-card-list p {
+  max-width: 38rem;
+  margin-top: 0.42rem;
+  color: #2e2634;
+  font-size: clamp(0.86rem, 0.98vw, 1.04rem);
+  line-height: 1.62;
+}
+
+@media (max-width: 1180px) {
+  .celador-main {
+    align-items: start;
+  }
+
+  .celador-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .celador-hero,
+  .celador-panel {
+    min-height: auto;
+  }
+
+  .celador-hero h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .celador-page .container {
+    width: min(100% - 24px, 1790px);
+  }
+
+  .celador-page .navbar {
+    min-height: 78px;
+  }
+
+  .brand-project-text {
+    display: grid;
+    gap: 0.1rem;
+    font-size: 0.95rem;
+    white-space: normal;
+  }
+
+  .brand-project-text strong {
+    display: block;
+  }
+
+  .brand-project-text > span:last-child {
+    font-size: 0.88rem;
+  }
+
+  .celador-main {
+    padding: 20px 0 32px;
+  }
+
+  .celador-grid {
+    gap: 18px;
+  }
+
+  .celador-hero,
+  .celador-panel {
+    border-radius: 22px;
+  }
+
+  .celador-hero {
+    padding: 30px 22px;
+  }
+
+  .celador-hero .eyebrow {
+    font-size: 0.78rem;
+  }
+
+  .celador-hero h1 {
+    font-size: clamp(2.8rem, 12.5vw, 3.75rem);
+  }
+
+  .celador-hero p:not(.eyebrow),
+  .celador-card-list p {
+    font-size: 0.98rem;
+  }
+
+  .celador-benefits {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .celador-benefits article {
+    min-height: 0;
+    padding: 0 0 1rem;
+  }
+
+  .celador-benefits article + article {
+    border-top: 1px solid rgba(225, 37, 117, 0.2);
+    border-left: 0;
+    padding-top: 1rem;
+  }
+
+  .celador-panel {
+    padding: 18px;
+  }
+
+  .celador-card-list {
+    gap: 14px;
+  }
+
+  .celador-card-list article {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .celador-card-list h2 {
+    font-size: 1.32rem;
+  }
+}
